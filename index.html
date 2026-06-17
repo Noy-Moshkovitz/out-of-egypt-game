@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="he">
 <head>
+<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>יציאת מצרים</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div id="startScreen">
   <h1>🏺 יציאת מצרים</h1>
-  <button onclick="startGame()">התחל</button>
+  <p>בריחה ממצרים עד ים סוף</p>
+  <button onclick="startGame()">▶ התחל משחק</button>
+</div>
+
+<div id="ui">
+  <div id="score">Score: 0</div>
+  <div id="level">Level: 1</div>
+  <button id="seaBtn" onclick="openSea()">🌊 פתח ים סוף</button>
 </div>
 
 <canvas id="game"></canvas>
